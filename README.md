@@ -16,6 +16,6 @@
 
 <br>
 
-### This is final challenge solution of Conquering Responsive Layouts whose solution in not being provided in the course. <br> The instructions for this challenge are provided by the course tutor in the [pdf.]() At the end of this course you are also getting a [certificate](./Assets/pdf/CRL-certificate.pdf). <br>
+### This is final challenge solution of Conquering Responsive Layouts whose solution in not being provided in the course. <br> The instructions for this challenge are provided by the course tutor in the [pdf of instructions.](./Assets/pdf/final-challenge-specs.pdf) <br> At the end of this course you are also getting a [certificate](./Assets/pdf/CRL-certificate.pdf). <br>
 
 ### **✨ Have a great day ahead !! ✨**
