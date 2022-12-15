@@ -1,0 +1,248 @@
+/* font  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Rubik+80s+Fade&display=swap");
+/* root values  */
+:root {
+  --montserrat: "Montserrat", sans-serif;
+  --oswald: "Oswald", sans-serif;
+  --logo--txt: "Rubik 80s Fade", cursive;
+  --dark-bg: #2e323f;
+  --normal--bg: #3b4050;
+  --light--bg: #6f737f;
+  --white--color: #ffffff;
+  --title--color: #a59678;
+}
+/* style  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: var(--white--color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+/* reusable classes  */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.btn {
+  background-color: var(--title--color);
+  padding: 0.1rem 1rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.row {
+  display: flex;
+  padding: 1rem;
+}
+.oswald {
+  font-family: var(--oswald);
+}
+.montserrat {
+  font-family: var(--montserrat);
+}
+/* normal class  */
+
+/* navbar  */
+header {
+  background-color: var(--dark-bg);
+  font-family: var(--oswald);
+  font-size: 18px;
+  padding: 0.5rem;
+}
+.logo--txt {
+  font-family: var(--logo--txt);
+}
+.nav--list {
+  flex-grow: 1;
+  justify-content: right;
+  align-items: center;
+  gap: 2rem;
+}
+.link--text:hover {
+  color: var(--title--color);
+  font-weight: 550;
+}
+
+/* HERO */
+.hero {
+  background-color: var(--normal--bg);
+  padding: 7rem 0;
+}
+
+.hero--title h1 {
+  font-size: 90px;
+  font-family: var(--oswald);
+  line-height: 100px;
+}
+.hero--title h1 span {
+  color: var(--title--color);
+}
+.hero--text {
+  font-family: var(--montserrat);
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.hero--text p,
+a {
+  font-size: 24px;
+}
+.hero--text a {
+  font-family: var(--oswald);
+  font-weight: 600;
+}
+.hero--btn {
+  margin-top: 2rem;
+  width: max-content;
+}
+
+/* card section  */
+.card--section {
+  background-color: var(--light--bg);
+  padding: 4rem 0;
+}
+.card {
+  padding: 2rem;
+  text-align: center;
+}
+.card--title {
+  font-size: 30px;
+  color: var(--title--color);
+}
+.card--text {
+  font-size: 18px;
+  margin-top: 1rem;
+  color: var(--dark-bg);
+}
+
+/* img included section  */
+.img--section {
+  padding: 2rem 0;
+}
+.col--box {
+  gap: 2rem;
+}
+.center--col {
+  /* width: 80%; */
+  padding-right: 5rem;
+}
+
+.center--col * {
+  margin: 1rem 0;
+}
+.center--col .title {
+  font-family: var(--oswald);
+  font-size: 36px;
+}
+.img {
+  width: 100%;
+}
+.side--col {
+  text-align: center;
+}
+.side--card {
+  padding: 2rem;
+  background-color: var(--dark-bg);
+  margin-bottom: 1rem;
+}
+
+.side--card--title {
+  font-family: var(--oswald) !important;
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+.center--col p,
+.side--card p {
+  font-family: var(--montserrat);
+  color: var(--dark-bg) !important;
+}
+.side--card p {
+  font-family: var(--montserrat);
+  color: #ffffff !important;
+}
+.center--col .title {
+  color: var(--title--color) !important;
+  font-weight: 500;
+}
+
+/* footer  */
+
+footer {
+  padding: 5rem 0;
+  background-color: var(--normal--bg);
+}
+
+.footer--big--title {
+  font-size: 30px;
+  text-align: center;
+}
+.footer--title {
+  font-weight: 24px;
+  color: var(--title--color);
+}
+
+.footer--bottom {
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.footer--bottom .col {
+  padding: 2rem;
+}
+.col + .col {
+  width: 20rem;
+}
+.col.col-1 p:nth-child(2),
+.montserrat li {
+  margin: 1rem 0;
+}
+.col.col-1 {
+  padding-left: 1rem;
+}
+ul.montserrat li a {
+  font-size: 16px;
+  margin: 1rem 0;
+}
+
+/* media queries  */
+/* breakpoint 1 */
+@media (max-width: 1000px) {
+  .col--box {
+    flex-direction: column;
+  }
+  .side--col {
+    display: flex;
+    flex-direction: row;
+  }
+  .side--card {
+    margin-right: 1rem;
+  }
+}
+/* breakpoint 2  */
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+  .hero--title h1 {
+    font-size: 60px;
+    line-height: 70px;
+    margin: 1rem;
+  }
+  .center--col {
+    width: 100%;
+    padding: 0;
+  }
+  .side--col {
+    flex-direction: column !important;
+  }
+}
