@@ -27,7 +27,7 @@ html {
 }
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 /* reusable classes  */
 .container {
@@ -61,6 +61,10 @@ header {
   font-family: var(--oswald);
   font-size: 18px;
   padding: 0.5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
 }
 .logo--txt {
   font-family: var(--logo--txt);
